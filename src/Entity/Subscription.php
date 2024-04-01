@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\HasLifecycleCallbacks;
 
 #[ORM\Entity]
+#[ORM\Index(name: "state_idx", columns: ["state"])]
 #[HasLifecycleCallbacks]
 class Subscription
 {

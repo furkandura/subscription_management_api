@@ -77,6 +77,7 @@ CREATE TABLE `subscription` (
   PRIMARY KEY (`id`),
   KEY `IDX_A3C664D394A4C7D4` (`device_id`),
   KEY `IDX_A3C664D33E030ACD` (`application_id`),
+  KEY `state_idx` (`state`),
   CONSTRAINT `FK_A3C664D33E030ACD` FOREIGN KEY (`application_id`) REFERENCES `application` (`id`),
   CONSTRAINT `FK_A3C664D394A4C7D4` FOREIGN KEY (`device_id`) REFERENCES `device` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=87 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
