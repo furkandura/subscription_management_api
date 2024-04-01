@@ -1,0 +1,28 @@
+old_sound_rabbit_mq:
+    connections:
+        default:
+            url: '%env(RABBITMQ_URL)%'
+
+    producers:
+        subscription_validate:
+            connection: default
+            exchange_options: { name: 'subscriptionValidateExchange', type: direct }
+
+        callback_request:
+            connection: default
+            exchange_options: { name: 'callbackRequestExchange', type: direct }
+
+    consumers:
+        subscription_validate:
+            connection: default
+            exchange_options: { name: 'subscriptionValidateExchange', type: direct }
+            queue_options: { name: 'subscription_validate'}
+            callback: App\Consumer\SubscriptionValidateConsumer
+
+        callback_request:
+            connection: default
+            exchange_options: { name: 'callbackRequestExchange', type: direct }
+            queue_options: { name: 'callback_request' }
+            callback: App\Consumer\CallbackRequestConsumer
+
+
