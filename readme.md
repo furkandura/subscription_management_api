@@ -16,4 +16,4 @@ API dokümantasyonuna [http://url/api/doc](http://url/api/doc) adresinden erişi
   Abonelik tarafında bir güncelleme olduğunda güncelleme türünü yakalar ve uygulama tablosundaki callback request URL'ine iletilir. İstenen durum kodu alınmazsa, yeniden denemek için isteği kuyruğa alır. Bu, sistemdeki güncellemelerin uygulama tarafına iletilmesini sağlar ve iletişimde kesinti yaşanmamasını sağlar.
 
 ## Kuyruk Sistemi Detayları
-Kullandığımız paket ayarları eksik olduğundan, DLX (Ölü Mektar Değişimi) ve DLQ (Ölü Mektar Kuyruğu) yapılandırmalarının RabbitMQ'da manuel olarak ayarlanması gerekmektedir. Kuyruktaki mesajlar, yapılandırmaya göre tekrar denenip kuyruktan çıkarılacaktır. Bu, sistemdeki iletişim hatalarını yönetmeyi ve veri bütünlüğünü korumayı sağlar.
+Kullandığımız paket ayarları eksik olduğundan, DLX ve DLQ yapılandırmalarının RabbitMQ'da manuel olarak ayarlanması gerekmektedir. Kuyruktaki mesajlar, yapılandırmaya göre tekrar denenip kuyruktan çıkarılacaktır. Bu, sistemdeki iletişim hatalarını yönetmeyi ve veri bütünlüğünü korumayı sağlar.
