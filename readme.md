@@ -1,4 +1,4 @@
-# Abonelik Yönetimi API
+# Subscription Management API
 
 ## API Dokümantasyonu
 API dokümantasyonuna [http://url/api/doc](http://url/api/doc) adresinden erişilebilir.
