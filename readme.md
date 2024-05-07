@@ -15,5 +15,3 @@ API dokümantasyonuna [http://url/api/doc](http://url/api/doc) adresinden erişi
 * ### Callback Request
   Abonelik tarafında bir güncelleme olduğunda güncelleme türünü yakalar ve uygulama tablosundaki callback request URL'ine iletilir. İstenen durum kodu alınmazsa, yeniden denemek için isteği kuyruğa alır. Subscription tarafındaki güncellemelerin third party uygulamalara iletilmesini sağlar.
 
-## Kuyruk Sistemi Detayları
-Kullandığımız paket ayarları eksik olduğundan, DLX ve DLQ yapılandırmalarının RabbitMQ'da manuel olarak ayarlanması gerekmektedir. Kuyruktaki mesajlar, yapılandırmaya göre tekrar denenip kuyruktan çıkarılacaktır. Bu, sistemdeki iletişim hatalarını yönetmeyi ve veri bütünlüğünü korumayı sağlar.
